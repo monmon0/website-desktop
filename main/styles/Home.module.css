@@ -133,8 +133,47 @@
 }
 
 @media (max-width: 600px) {
+
+  .main{
+    /* background-color: pink; */
+    background-image: url('https://i.pinimg.com/736x/df/86/03/df8603265f8a70699cf5ca9a10213ed6.jpg');
+  }
+
+  .description {
+    font-size: 1rem;
+    /* margin: 1em auto; */
+    /* align-self: center; */
+    /* justify-content: center; */
+  }
+
+  .description h3 {
+    margin-left: 0.2em;
+  }
+
+  .navbar {
+    display: none;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
+  
+  .footer {
+    display: none;
+  }
+
+  .card {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  
 }

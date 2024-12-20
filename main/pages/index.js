@@ -9,17 +9,11 @@ import Swal from 'sweetalert2'
 export default function Home() {
   const experience = () => {
     Swal.fire({
-      // title: "Hello!",
-      // text: "You clicked on the text!",
-      // icon: "info",
-      // confirmButtonText: "OK",
       title: "Experience",
-      // icon: "info",
+      icon: "info",
       html: `
-        <ul>
-        <li> halo 1</li>
-        <li> halo 2</li>
-        <ul/>
+        <img src = "https://i.pinimg.com/736x/2b/53/59/2b5359dd9d8a0c3b042993d84a9100f9.jpg" height = "20%"/>
+        <h3>Currently updating my resume</h3>
       `,
       showCloseButton: true,
       showCancelButton: true,
@@ -33,20 +27,19 @@ export default function Home() {
       `,
       cancelButtonAriaLabel: "Thumbs down",
       width: 600,
-      padding: "3em",
       color: "#716add",
     });
   };
 
   const art = () => {
     Swal.fire({
-      title: "Experience",
+      title: "Art / Commission",
       // icon: "info",
       html: `
-        <ul>
-        <li> halo 1</li>
-        <li> halo 2</li>
-        <ul/>
+        <img src = "./img/ii.jpg" height = "50%"/>
+        <a href = "https://www.notion.so/monmon12/Art-Portflio-12cc27f0488480c28a80d6dce536767f" target="_blank"><h3>My personal artwork</h3></a>
+        <img src = "./img/mon.GIF" height = "50%"/>
+        <a href = "https://www.notion.so/monmon12/Art-Portflio-12cc27f0488480c28a80d6dce536767f" target="_blank"><h3>Commimssion of my OC (NOT MY ART)</h3></a>
       `,
       showCloseButton: true,
       showCancelButton: true,
@@ -68,24 +61,7 @@ export default function Home() {
   const personal = () => {
     Swal.fire({
       title: "Personal",
-      // text: "You clicked on the text!",
-      imageUrl: "../img/test.png",
-      // imageHeight: 1500,
-      html: `<p>
-      I grew up in the heart of Vietnam and now curently attending the University of Waterloo as a second year Comp Sci/Data Sci student.
-      </br>
-      </br> I love endowing myself in new possibilities and easily obsessed over anything I find remotely interesting.
-      
-      <ul>
-      <li>people person but lil bit nerdy, introverted extrovert.
-      <li>passionate about art, set for art school but have a change of heart (more on my art)
-      <li>easily obsessed, too many hobbies; love internet subcultures and reading classics
-      <li> love a certain lifestyle so i'll do whatever i can for it 
-      <ul>
-      </p>
-      
-      `,
-    
+      imageUrl: "../img/personal.svg",
       confirmButtonText: "OK",
     });
   };
@@ -95,18 +71,33 @@ export default function Home() {
       title: "Projects",
       // icon: "info",
       html: `
-       <div> <img src = "./img/1.svg" /></div>
+      <p>a little music to keep you occupied ~~ !</br></p>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0mk9lGk7y9HpnoaAllUfmv?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      
+      <div> <p></br></p>
+      <img src = "./img/nasa.svg" /></div>
       <div>
-      <h3> seismology </h3>
+      <h3> Seismology Detection - NASA Space APP </h3>
+      <a href = "https://github.com/br0mabs/planetary-seismology" target="_blank"> Github </a>
+
+      </br>------------------
+      </div>
+      <div> <p></br></p>
+      <div> <img src = "./img/2.svg" /></div>
+      <h3>AMath Research - Image Optimization Methods </h3>
+      <a href = "https://github.com/monmon0/AM-5-DRP-Optimization-Methods-for-Image-Processing" target="_blank"> Github </a>
 
       </br>------------------
       </div>
 
-      <div> <img src = "./img/2.svg" /></div>
-      <div>seismology</div>
 
-      <div> <img src = "./img/3.svg" /></div>
-      <div>seismology</div>
+      <div> <p></br></p>
+      <div> <img src = "./img/tbbt.svg" /></div>
+      <h3>TBBT Image Classification </h3>
+      <a href = "" target="_blank"> WIP </a>
+
+      </br>------------------
+      </div>
 
       `,
       showCloseButton: true,
@@ -164,10 +155,12 @@ export default function Home() {
           </div>
         </div>
       </main>
-
       <footer>
+
         <div className = "footer-text">
+
         <p className = "text-1">skills</p>
+
         <p className = "text-2">contacts</p>
         </div>
         <ContactNavbar/>
@@ -228,6 +221,11 @@ export default function Home() {
             Bitstream Vera Sans Mono,
             Courier New,
             monospace;
+        }
+
+        @media (max-width: 600px) {
+          footer {
+          }
         }
       `}</style>
 

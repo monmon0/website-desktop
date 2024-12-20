@@ -6,10 +6,10 @@ const ContactNavbar = () => {
 
     <div className="navbar">
       <div className="contacts-section">
-      <a href = "" target="_blank"><img src="https://deepansha.gallerycdn.vsassets.io/extensions/deepansha/pretty-pink-theme/1.1.2/1709666236027/Microsoft.VisualStudio.Services.Icons.Default" alt="VS Code" className="icon" /></a>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png" alt="Figma" className="icon" />
 
-      <div class="white-bar"></div>
+      <img src="https://deepansha.gallerycdn.vsassets.io/extensions/deepansha/pretty-pink-theme/1.1.2/1709666236027/Microsoft.VisualStudio.Services.Icons.Default" alt="VS Code" className="icon" id = "hide"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png" alt="Figma" className="icon" id = "hide" />
+      <div class="white-bar"  id="hide" ></div>
       <a href = "https://www.linkedin.com/in/monicatrinhh/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="icon" />
         </a>
@@ -61,6 +61,15 @@ const ContactNavbar = () => {
       .icon:hover {
         transform: scale(1.1);
         opacity: 0.8;
+      }
+
+      @media (max-width: 600px) {
+        .navbar {
+          width: 80%;
+        }
+        #hide {
+          visibility: hidden;
+        }
       }
       
       `}</style>
