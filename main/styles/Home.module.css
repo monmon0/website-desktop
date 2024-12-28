@@ -135,21 +135,20 @@
 @media (max-width: 600px) {
 
   .main{
-    /* background-color: pink; */
-    background-image: url('https://i.pinimg.com/736x/df/86/03/df8603265f8a70699cf5ca9a10213ed6.jpg');
+    background-image: url('https://i.pinimg.com/736x/58/30/ed/5830ede9fb7edd37b46194ba2353400c.jpg');
+    background-size: cover;
   }
 
   .description {
-    font-size: 1rem;
-    /* margin: 1em auto; */
-    /* align-self: center; */
-    /* justify-content: center; */
+    font-size: 1.3rem;
+    justify-content: center;
+    padding-right: 0.8em;
   }
 
-  .description h3 {
-    margin-left: 0.2em;
+  .time {
+    align-self: center;
   }
-
+  
   .navbar {
     display: none;
   }
@@ -165,7 +164,7 @@
   }
 
   .card {
-    flex-basis: 50%;
+    flex-basis: 20%;
     text-align: center;
   }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import styles from '../styles/Home.module.css';
 // import "./ContactNavbar.css";
 
 const ContactNavbar = () => {
@@ -10,6 +11,8 @@ const ContactNavbar = () => {
       <img src="https://deepansha.gallerycdn.vsassets.io/extensions/deepansha/pretty-pink-theme/1.1.2/1709666236027/Microsoft.VisualStudio.Services.Icons.Default" alt="VS Code" className="icon" id = "hide"/>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png" alt="Figma" className="icon" id = "hide" />
       <div class="white-bar"  id="hide" ></div>
+
+      <div className="contact-icon">
       <a href = "https://www.linkedin.com/in/monicatrinhh/" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" className="icon" />
         </a>
@@ -21,7 +24,7 @@ const ContactNavbar = () => {
         <a href = "mailto:monicatrinh05@gmail.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png" alt="Gmail" className="icon" />
         </a>
       </div>
-
+      </div>
       <style jsx>{`
        .navbar {
         display: flex;
@@ -63,10 +66,26 @@ const ContactNavbar = () => {
         opacity: 0.8;
       }
 
+      contact-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 0.5em;
+      }
+
       @media (max-width: 600px) {
         .navbar {
           width: 80%;
         }
+        .contacts-section {
+          align-content: flex-start;
+        }
+        .icon{
+          padding: 0.5em;
+          margin-left: -4.5em;
+        }
+        
         #hide {
           visibility: hidden;
         }

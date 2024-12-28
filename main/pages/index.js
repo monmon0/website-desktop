@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import CurrentDayAndDate from "../js/date.js";
 import CurrentTime from "../js/time.js";
 import ContactNavbar from "../js/social.js";
+import ContactNavbar_Mobile from "../js/social-mobile.js";
 import Swal from 'sweetalert2'
 
 
@@ -125,7 +126,7 @@ export default function Home() {
 
       <main>
         <div className={styles.description}>
-        <CurrentDayAndDate />
+          <CurrentDayAndDate className ={styles.time}/>
           <h3><CurrentTime /></h3>
         </div>
 
@@ -163,7 +164,8 @@ export default function Home() {
 
         <p className = "text-2">contacts</p>
         </div>
-        <ContactNavbar/>
+        {/* <ContactNavbar/> */}
+        <ContactNavbar_Mobile/>
           {/* <img src="../img/app.svg" alt="Vercel"  /> */}
       </footer>
 
@@ -224,7 +226,8 @@ export default function Home() {
         }
 
         @media (max-width: 600px) {
-          footer {
+          .footer-text {
+            visibility: hidden;
           }
         }
       `}</style>
