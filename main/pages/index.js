@@ -13,8 +13,10 @@ export default function Home() {
       title: "Experience",
       icon: "info",
       html: `
-        <img src = "https://i.pinimg.com/736x/2b/53/59/2b5359dd9d8a0c3b042993d84a9100f9.jpg" height = "20%"/>
         <h3>Currently updating my resume</h3>
+        <iframe src="https://drive.google.com/file/d/1AK3V7VPcewly_ucC6-tuCLY8JrsdLJ45/preview" width="500" height="700" allow="autoplay"></iframe>
+        <img src = "https://i.pinimg.com/736x/2b/53/59/2b5359dd9d8a0c3b042993d84a9100f9.jpg" height = "20%"/>
+
       `,
       showCloseButton: true,
       showCancelButton: true,
